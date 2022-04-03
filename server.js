@@ -15,7 +15,7 @@ app.use(bodyParsor.json());
 
 const indexRoute = require('./routes/index_route');
 
-app.use(indexRoute);
+app.use("heaman-portfolio.herokuapp.com",indexRoute);
 app.listen(3000,()=>{
   console.log("Server running at port 3000")
 })
